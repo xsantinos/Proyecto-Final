@@ -27,7 +27,7 @@ app.use(express.json()); // Equivalente a body-parser, para manejo de body .json
 app.use(express.static(join(__dirname, "public"))); //Para servir archivos estáticos desde una carpeta "public"
 app.use(express.urlencoded({ extended: true }));
 
-//routes
+//Rutas, tanto de products como de auth
 app.use("/api/products", productRoutes);
 app.use("/auth", authRoutes);
 
