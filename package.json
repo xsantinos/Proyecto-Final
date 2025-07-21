@@ -1,0 +1,24 @@
+{
+  "name": "template-server-layers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node src/index.js",
+    "test" : "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Santiago Borghi",
+  "type": "module",
+  "description": "Proyecto Final del curso Node.js, edición 2025, del programa Talento Tech del GCBA",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "firebase": "^12.0.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

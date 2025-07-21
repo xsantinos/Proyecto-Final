@@ -1,0 +1,4 @@
+
+// Obviar el archivo de variables de entorno y la carpeta node_modules
+.env
+node_modules
