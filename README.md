@@ -1,19 +1,21 @@
 # 🛠️ Proyecto Final Node.js - Talento Tech  
 **Desarrollado por Santiago Borghi**
 
-Este proyecto es una API REST desarrollada como proyecto final del curso Backend Node JS del programa **Talento Tech**.
-Su propósito es gestionar un catálogo de productos, con operaciones CRUD básicas y autenticación de usuarios mediante **JWT**.
+Este proyecto es una API desarrollada como proyecto final del curso Backend NodeJS del programa **Talento Tech**.
+Su propósito es gestionar un catálogo de productos, con operaciones CRUD básicas (salvo Update) y autenticación de usuarios mediante **JWT**.
 
 ---
 
 ## Características principales
 
-- API REST con arquitectura en capas: routes -> controllers -> services -> model.
+- API REST con arquitectura en capas: **routes -> controllers -> services -> model**.
+- Con bloques try-catch de validación.
+- Con manejo de estados (200, 400, 404, 500)
 - Autenticación de usuarios vía JSON Web Tokens.
 - Base de datos **Firebase Firestore**.
 - Modularidad: Aparte de la división de responsabilidades en capas, existen dos "líneas de trabajo" por así decir, una 
   de usuarios/login y otra de productos (auth y product).
-- Colección de solicitudes con documentación propia, realizada en Postman (se incluye).
+- Colección de solicitudes con documentación propia, realizada en Postman (se incluye el link al final de este archivo).
 - Ingresando npm start por consola, ejecuta "node index.js". Ingresando npm test, ejecuta "nodemon index.js" para pruebas más fácil.
 - Para el funcionamiento adecuado del proyecto se han instalado las siguientes dependencias:
     body-parser -> ^2.2.0
