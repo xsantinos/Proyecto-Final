@@ -16,7 +16,7 @@ import {
 const productCollection = collection(db, "productos");
 
 
-// GET
+//GET -> Para obtener todos los productos y uno por su ID
 export const getAllProductsModel = async () => {
     try {
         const catalogo = await getDocs(productCollection)
@@ -51,7 +51,7 @@ export const getProductByIdModel = async (id) => {
     }
 }
 
-// POST
+//POST -> Para crear un producto nuevo en el catálogo.
 export const createNewProductModel = async (product) => {
     try {
         const newProduct = await addDoc(productCollection, product);
@@ -67,7 +67,7 @@ export const createNewProductModel = async (product) => {
     }
 }
 
-//DELETE
+//DELETE -> Para eliminar un producto del catálogo por su id.
 export const deleteProductByIdModel = async (id) => {
     try {
         //deleteDoc si borra bien devuelve una Promise vacía, entonces para 

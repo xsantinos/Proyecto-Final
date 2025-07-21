@@ -1,5 +1,9 @@
-import { verifyToken } from "../utils/token-generator.js";
 
+// Middleware de autenticación para proteger rutas mediante verificación de token JWT.
+// No implementado
+
+/*
+import { verifyToken } from "../utils/token-generator.js";
 export const authentication = (req, res, next) => {
     const token = req.headers["authorization"].split(" ")[1];
     if (!token){
@@ -14,3 +18,4 @@ export const authentication = (req, res, next) => {
         }
     }
 }
+*/

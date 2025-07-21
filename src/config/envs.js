@@ -1,6 +1,8 @@
 import { config } from "dotenv";
 config();
 
+//Genero el objeto envs, donde voy a tener todas las variables de entorno de
+//mi proyecto. En este caso, de base de datos y de autenticación.
 export const envs = {
     database: {
         apiKey: process.env.APIKEY,

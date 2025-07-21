@@ -2,7 +2,7 @@
 
 import productService from '../services/product.service.js'
 
-//GET
+//GET -> Para obtener todos los productos y uno por su ID
 const getAllProducts = async (req,res) => {
     try {
         const products = await productService.getAllProducts();
@@ -32,7 +32,7 @@ const getProductById = async (req,res) => {
     }
 }
 
-//POST
+//POST -> Para crear un producto nuevo en el catálogo.
 const createNewProduct = async (req,res) => {
     try {
         const {descripcion, precio} = req.body;
@@ -48,7 +48,7 @@ const createNewProduct = async (req,res) => {
     }
 }
 
-//DELETE
+//DELETE -> Para eliminar un producto del catálogo por su id.
 const deleteProductById = async (req,res) => {
     try {
         const {id} = req.params;
